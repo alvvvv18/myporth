@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Cv</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/boxicons-2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">My CV</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn nav-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CV
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center nav-link"
+                    type="button"
+                  >
+                    <a class="nav-link" href="/CV/index.html">About Me</a>
+                  </button>
+                  <button
+                    class="dropdown-item d-flex align-items-center nav-link"
+                    type="button"
+                  >
+                    <a class="nav-link" href="/CV/skill.html">Skills</a>
+                  </button>
+                  <button
+                    class="dropdown-item d-flex align-items-center nav-link"
+                    type="button"
+                  >
+                    <a class="nav-link" href="/CV/port.html">Porthpolio</a>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Biodata/"
+                >Biodata</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn nav-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Theme
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center nav-link"
+                    type="button"
+                    data-bs-theme-value="light"
+                  >
+                    <i class="bx bxs-sun me-2"></i>
+                    light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-cente nav-link"
+                    type="button"
+                    data-bs-theme-value="dark"
+                  >
+                    <i class="bx bxs-moon me-2"></i>
+                    dark
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Biodata-->
+    <section class="biodata-section" id="biodata">
+      <div class="container">
+        <p class="text orange fw-semibold">Biodata</p>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <img src="/image.jpg/me.jpeg" class="skills-img mt-5 mb-5" />
+          </div>
+          <div class="col-md-6">
+            <table class="table">
+              <tr>
+                <td>Nama</td>
+                <td>Alfiani Hanifah</td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>18 Mei 2004</td>
+              </tr>
+              <tr>
+                <td>Umur</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>Jl. H. Marhusein Gg. Arwana 3 No.73 Selili</td>
+              </tr>
+              <tr>
+                <td>Golongan Darah</td>
+                <td>O</td>
+              </tr>
+              <tr>
+                <td>Agama</td>
+                <td>Islam</td>
+              </tr>
+              <tr>
+                <td>Hobi</td>
+                <td>Nonton dan Jalan jalan</td>
+              </tr>
+            </table>
+          </div>
+          <div class="main-btn">
+            <a href="/index.html" class="btn m-4">Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="py-2 fixed-bottom">
+      <div class="container">
+        <p class="text-white fs-7 mb-0">
+          Copyright &copy; 2024 alfianihnfh. All Right Reserved
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".experience-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      (() => {
+        "use strict";
+
+        const getStoredTheme = () => localStorage.getItem("theme");
+        const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+        const getPreferredTheme = () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+            return storedTheme;
+          }
+
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        };
+
+        const setTheme = (theme) => {
+          if (theme === "auto") {
+            document.documentElement.setAttribute(
+              "data-bs-theme",
+              window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light"
+            );
+          } else {
+            document.documentElement.setAttribute("data-bs-theme", theme);
+          }
+        };
+
+        setTheme(getPreferredTheme());
+
+        const showActiveTheme = (theme, focus = false) => {
+          const themeSwitcher = document.querySelector("#bd-theme");
+
+          if (!themeSwitcher) {
+            return;
+          }
+
+          const themeSwitcherText = document.querySelector("#bd-theme-text");
+          const activeThemeIcon = document.querySelector(
+            ".theme-icon-active use"
+          );
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const svgOfActiveBtn = btnToActive
+            .querySelector("svg use")
+            .getAttribute("href");
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+              element.setAttribute("aria-pressed", "false");
+            });
+
+          btnToActive.classList.add("active");
+          btnToActive.setAttribute("aria-pressed", "true");
+          activeThemeIcon.setAttribute("href", svgOfActiveBtn);
+          const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+          themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+          if (focus) {
+            themeSwitcher.focus();
+          }
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            const storedTheme = getStoredTheme();
+            if (storedTheme !== "light" && storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          showActiveTheme(getPreferredTheme());
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                const theme = toggle.getAttribute("data-bs-theme-value");
+                setStoredTheme(theme);
+                setTheme(theme);
+                showActiveTheme(theme, true);
+              });
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>
